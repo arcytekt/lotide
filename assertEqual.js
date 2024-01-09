@@ -5,8 +5,8 @@ const assertEqual = function(actual, expected) {
   } else {
     console.log("🛑🛑🛑 Assertion Failed: [" + actual + "] !== [" + expected + "]");
   }
-  return pass;
 };
 
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
+assertEqual(1, 2);
