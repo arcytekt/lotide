@@ -11,8 +11,8 @@ assertEqual(1, 1);
 assertEqual(1, 2);
 assertEqual("test", "test");
 
-const head = function(firstItem) {
-  return firstItem[0];
+const head = function(array) {
+  return array[0];
 }
 
 assertEqual(head([5,6,7]), 5);
