@@ -31,7 +31,7 @@ const assertArraysEqual = function(actual, expected) {
 
 const middle = function(array) {
   let result = [];
-  if (array.length < 2) {
+  if (array.length <= 2) {
     return result;
   }
   if (array.length % 2 !== 0) {
