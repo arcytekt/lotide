@@ -18,7 +18,7 @@ const assertArraysEqual = function(actual, expected) {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: [${actual}] !== [${expected}]`);
   }
-}
+};
 
 //implement the function "middle" which will:
 //take in an array and return the middle-most element(s) of the given array
@@ -30,17 +30,17 @@ const assertArraysEqual = function(actual, expected) {
 
 
 const middle = function(array) {
-  let result = []
-  if (array.length <2) {
+  let result = [];
+  if (array.length < 2) {
     return result;
   }
-    if (array.length % 2 !== 0) {
-      result.push(array[Math.floor(array.length /2)]);
-      } else {
-        result.push(array[array.length / 2 - 1], array[array.length / 2]);
-      }
-      return result;
-    }
+  if (array.length % 2 !== 0) {
+    result.push(array[Math.floor(array.length / 2)]);
+  } else {
+    result.push(array[array.length / 2 - 1], array[array.length / 2]);
+  }
+  return result;
+};
 
 
 //test cases:
