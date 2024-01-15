@@ -19,6 +19,4 @@ const eqArrays = function(array1, array2) {
   }
 };
 
-const assertEqual = require('./assertEqual');
-
 module.exports = eqArrays;
