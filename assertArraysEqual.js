@@ -4,18 +4,7 @@
 //we will not be writing assertions (test code) for assertArraysEqual. That said, you can and should call the function below its declaration and visually ensure that the message printed to the console is accurate.
 
 
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  } else {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(actual, expected) {
   let result = eqArrays(actual, expected);
@@ -26,6 +15,4 @@ const assertArraysEqual = function(actual, expected) {
   }
 }
 
-//test cases
-assertArraysEqual([1, 2, 3], [1, 2, 3]);// => should PASS
-assertArraysEqual([1, 2, 3], [3, 2, 1]);// => should FAIL
+module.exports = assertArraysEqual;
