@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@arcytekt/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "lotide is a mini clone of the lodash library.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/arcytekt/lotide.git"
   },
-  "author": "",
+  "author": "Ethan Pelensky a.k.a. Arcytekt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/arcytekt/lotide/issues"
