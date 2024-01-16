@@ -20,4 +20,8 @@ describe("#middle", () => {
   it("should return an empty array for input [1]", () => {
     assert.deepEqual(middle([1]), []);
   });
+
+  it("should return [2] for input [1, 2, 3]", () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]);
+  });
 });
